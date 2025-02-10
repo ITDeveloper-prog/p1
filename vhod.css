@@ -1,0 +1,57 @@
+/* Style.css File */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.tit{
+    
+    font-family: 'Roboto', Arial, sans-serif;
+
+      
+}
+
+.buttonn1{
+    width: 25%;
+    height: 30px;
+    background-color: hsl(0, 0%, 80%);
+    border: hsl(0, 0%, 80%);
+}
+
+
+/* Styling the container */
+.container {
+    
+    margin: 10% auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+}
+
+/* Style all input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #0f0fe9;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4141fc;
+}
+
+

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="vhod.css">
+</head>
+<body>
+    <div class="container">
+    <h2 class="tit">Вход</h2>
+    <br>
+    <form id="registrationForm">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button class="buttonn1" type="submit">Войти</button>
+    </form>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+            const ppass = 'mom';
+            const password = document.getElementById('password').value;
+            // const confirmPassword = document.getElementById('confirmPassword').value;
+
+            
+
+            if (password === ppass) {
+                // Если пароли совпадают, перенаправляем на другую страницу
+                window.location.href = 'fa.html'; // Замените на нужный URL
+            } else {
+                alert('Пароли не совпадают. Пожалуйста, попробуйте снова.');
+            }
+        });
+    </script>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Поле с паролем</title>
+  <style>
+   .textField, .passField {
+    width: 100%; /* Ширина поля */
+    padding: 10px; /* Поля */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.2); /* Тень внутри */
+    border: 1px solid #ccc; /* Параметры рамки */
+    color: #ff6d37; /* Цвет текста */
+    background: url(/example/image/user.png) no-repeat 5px 50%; /* Картинка пользователя */
+    padding-left: 30px; /* Расстояние от левого края */
+   }
+   .passField {
+    background: url(/example/image/lock.png) no-repeat 5px 50%; /* Картинка для поля с паролем */
+   }
+  </style>
+ </head>
+ <body>
+  <form action="handler.php">
+   <p><input maxlength="25" name="login" class="textField"></p>
+   <p><input type="password" maxlength="25" name="password" class="passField"></p>
+   <p><input type="submit" value="Войти"></p>
+  </form>
+<script>
+    function checkPassword() {
+        let password = document.querySelector('#passwordInput').value;
+        if (password === 'твойПароль') {
+        window.location.href = 'your-secure-page.html'; // Перенаправляет на новую страницу
+        } else {
+        alert('Неверный пароль!');
+        }
+    }
+</script>
+ </body>
+</html>
+
+
+
+   -->

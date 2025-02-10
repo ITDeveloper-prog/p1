@@ -1,0 +1,42 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+    <h2 class="tit">Регистрация</h2>
+    <br>
+    <form id="registrationForm">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" required><br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required><br>
+        <button class="buttonn1" type="submit">Зарегистрироваться</button>
+    </form>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Предотвращаем отправку формы
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Сохраняем пароль в Local Storage
+            localStorage.setItem(username, password);
+            alert('Регистрация успешна!');
+            // После успешной регистрации можно перенаправить пользователя на страницу входа
+        });
+    </script>
+    </div>
+</body>
+</html> 
+
+
+
